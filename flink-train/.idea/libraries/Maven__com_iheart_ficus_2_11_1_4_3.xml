@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.iheart:ficus_2.11:1.4.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../maven/repository/com/iheart/ficus_2.11/1.4.3/ficus_2.11-1.4.3.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../maven/repository/com/iheart/ficus_2.11/1.4.3/ficus_2.11-1.4.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../maven/repository/com/iheart/ficus_2.11/1.4.3/ficus_2.11-1.4.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,76 @@
+类
+Scala 类中的一个val字段: 私有字段+getter方法
+      var字段:私有方法+(getter 和 setter)
+###构造器###
+一个主构造器 和 多个辅助构造器
+
+辅助构造器:
+    名称this
+class Person{
+    private var name = ""
+    private var age = 0
+
+    def this(name:String){ //辅助构造器1
+        this() // 主构造器
+        this.name = name
+    }
+
+    def this(name:String,age:Int){ // 辅助构造器2
+        this(name) // 调用前一个辅助构造器1
+        this.age = age
+    }
+}
+
+主构造器:
+    如果一个类没有显式指定一个主构造器,
+       会隐式生成一个无参的主构造器
+
+    1:主构造器的参数直接放置在类名之后
+Scala:
+    class Person(val name:String,val age:Int){
+    //上面()中参数就是主构造器参数
+    ...
+    }
+Java:
+    public class Person{
+        private String name;
+        private Int age;
+
+        public Person(String name,int age){
+            this.name = name;
+            this.age = age;
+        }
+
+        public String name(){return this.name;}
+        public Int age(){return this.age;}
+        ...
+    }
+注意:上面的半行Scala跟多行Java代码 等效
+    2:主构造器会执行类定义中的所有语句/表达式
+    class Person(val name:String,val age:Int){
+        println("调用主构造器,时,这句话会输出")
+
+    }
+
+
+
+
+###创建对象###
+val p1 = new Person()   //主构造器
+val p1 = new Person("Dave")   //辅助构造器1 构造对象
+val p1 = new Person("Dave",10)   //辅助构造器2 构造对象
+
+
+Scala中,几乎可以在任何语法结构中嵌套任何语法结构:
+        函数嵌套函数,类嵌套类
+###嵌套类###
+
+
+
+类暂时不需要仔细研究
+
+重点还在数据结构 的算子操作
+
+
+
+
