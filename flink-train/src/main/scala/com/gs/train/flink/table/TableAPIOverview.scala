@@ -20,11 +20,11 @@ import scala.collection.mutable
 import scala.collection.mutable.ArrayBuffer
 
 /**
-  * Description  体验 table api  金竹
-  * Created with guoshuai
-  * date 2019/10/25 14:12
+  * Description 
+  * Created with guoshuai 
+  * date 2020/1/10 10:02
   **/
-class TableAPIOverviewITCase {
+class TableAPIOverview {
 
     // 客户表数据 customer_tab (客户id，客户姓名和客户描述信息)
     val customer_data = new mutable.MutableList[(String, String, String)]
@@ -128,8 +128,8 @@ class TableAPIOverviewITCase {
         // catalog可以是临时表之类的临时元数据，也可以是针对表环境注册的UDF函数。或者永久的元数据
         // 提供了一个统一的API来管理元数据,并可以通过表API和SQL查询
         val item =
-            env.addSource(new EventTimeSourceFunction[(Long, Int, String, String)](item_data))
-              .toTable(tEnv, 'onSellTime, 'price, 'itemID, 'itemType, 'rowtime.rowtime)
+        env.addSource(new EventTimeSourceFunction[(Long, Int, String, String)](item_data))
+          .toTable(tEnv, 'onSellTime, 'price, 'itemID, 'itemType, 'rowtime.rowtime)
 
         val pageAccess =
             env.addSource(new EventTimeSourceFunction[(Long, String, String)](pageAccess_data))
@@ -202,7 +202,7 @@ class TableAPIOverviewITCase {
 
         //SELECT 从customer_tab     选择用户姓名,并用内置的CONCAT函数拼接用户信息
         val result = customer
-                        .select('c_name,concat_ws('c_name," come ",'c_desc))
+          .select('c_name,concat_ws('c_name," come ",'c_desc))
         //DISTINCT 使用分组+查询实现   在订单表查询 所有的客户id , 需要去重
         /*val result = order.groupBy('c_id).select('c_id)*/
         //WHERE   在customer_tab查询客户id为c_001和c_003的客户信息
