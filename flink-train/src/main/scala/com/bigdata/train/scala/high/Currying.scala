@@ -6,6 +6,7 @@ import org.junit.rules.TemporaryFolder
 /**
   * Description  Scala函数柯里化  && Scala 偏函数
   *  函数柯里化:
+  *  函数柯里化:
   *     将原来接受两个参数的函数变成新的接受一个参数的函数的过程。
   *     新的函数返回一个以原有第二个参数为参数的函数。
   *
@@ -27,7 +28,7 @@ class Currying {
     def testCurrying():Unit={
         def normal(x:Int,y:Int) = x+y //普通写法
         def curry(x:Int)(y:Int) = x+y //函数柯里化
-        //测试结果 完全一样
+        //测试结果一样
         println(normal(1,10))
         println(curry(1)(10))
     }
