@@ -5,11 +5,13 @@ import org.junit.rules.TemporaryFolder
 
 /**
   * Description  Scala函数柯里化  && Scala 偏函数
-  *  函数柯里化的意思是:
+  *  函数柯里化:
   *     将原来接受两个参数的函数变成新的接受一个参数的函数的过程。
   *     新的函数返回一个以原有第二个参数为参数的函数。
   *
   *  偏函数:就是固定部分参数，生成另外一个参数更少的方法
+  *
+  *  闭包:闭包是一个函数，返回值依赖于声明在函数外部的一个或多个变量。
   *
   * Created with guoshuai 
   * date 2020/1/10 10:46
@@ -42,5 +44,13 @@ class Currying {
         println(strangeConditional("abcd"))
     }
 
+    @Test //闭包
+    def closure():Unit={
+        var factor = 3 //构建自由变量
+        val multiplier = (i:Int) => i * factor //闭包函数
+        //multiplier 就形成一个闭包:它引用函数外面的变量factor
+        //定义这个闭包函数时,将这个自由变量捕获而构成一个封闭的函数
+        println(multiplier(1))
+    }
 
 }
