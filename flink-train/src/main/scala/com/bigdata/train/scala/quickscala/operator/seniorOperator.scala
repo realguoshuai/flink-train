@@ -1,4 +1,4 @@
-package com.gs.train.scala.quickscala.operator
+package com.bigdata.train.scala.quickscala.operator
 
 /**
   * Created with IDEA  

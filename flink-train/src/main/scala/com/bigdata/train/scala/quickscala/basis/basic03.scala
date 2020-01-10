@@ -1,4 +1,4 @@
-package com.gs.train.scala.quickscala.basis
+package com.bigdata.train.scala.quickscala.basis
 
 import java.util
 

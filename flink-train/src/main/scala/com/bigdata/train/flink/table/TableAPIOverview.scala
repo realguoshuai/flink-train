@@ -1,4 +1,4 @@
-package com.gs.train.flink.table
+package com.bigdata.train.flink.table
 
 import org.apache.flink.api.scala._
 import org.apache.flink.configuration.Configuration

@@ -1,4 +1,4 @@
-package com.gs.train.scala.quickscala.practice
+package com.bigdata.train.scala.quickscala.practice
 
 import java.util.TimeZone
 

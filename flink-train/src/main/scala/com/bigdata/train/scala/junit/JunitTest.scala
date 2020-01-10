@@ -1,4 +1,4 @@
-package com.gs.train.scala.junit
+package com.bigdata.train.scala.junit
 
 import org.junit.{Rule, Test}
 import org.junit.rules.TemporaryFolder

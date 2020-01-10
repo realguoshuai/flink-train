@@ -1,4 +1,4 @@
-package com.gs.train.spark
+package com.bigdata.train.spark
 
 class test1 {
   def main(args: Array[String]): Unit = {

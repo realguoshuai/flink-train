@@ -1,4 +1,4 @@
-package com.gs.train.scala.quickscala.toyDemo
+package com.bigdata.train.scala.quickscala.toyDemo
 
 import java.net.{HttpURLConnection, SocketTimeoutException, URL}
 

@@ -1,4 +1,4 @@
-package com.gs.train.flink.socketdata;
+package com.bigdata.train.flink.socketdata;
 
 
 import java.util.Timer;
