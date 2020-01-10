@@ -15,7 +15,7 @@ object DfDs {
     val df = rdd.toDF("name","age","address")
     df.createOrReplaceTempView("person")
     val result = sql(
-//      select name from person
+//      select name from person  啊
       """
          |select _2 from person
       """.stripMargin
