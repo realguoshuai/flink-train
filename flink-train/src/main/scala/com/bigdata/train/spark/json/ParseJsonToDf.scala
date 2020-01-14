@@ -1,4 +1,4 @@
-package com.bigdata.train.spark.spark_sql
+package com.bigdata.train.spark.json
 
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.functions.{col, from_json}
