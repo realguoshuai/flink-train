@@ -14,7 +14,7 @@ flink-train:IDEA本地学习测试Flink项目
     TableAPIOverviewITCase
 
 ## Scala
-qucikscala:
+qucikscala: 
     快学scala基础,练习题  
 Junit:
     Scala 的测试使用Junit
